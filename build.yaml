@@ -17,9 +17,7 @@
 #     cmake-args: -DCONFIG_ZMK_STUDIO=y
 #     artifact-name: corne_left_with_studio
 #
-include:
-  - board: seeeduino_xiao_ble
-    shield: pmw3610_keyball_left
-  - board: seeeduino_xiao_ble
-    shield: pmw3610_keyball_right
+
+board: [ "seeeduino_xiao_ble" ]
+shield: [ "pmw3610_keyball_left", "pmw3610_keyball_right" ]
 ---
