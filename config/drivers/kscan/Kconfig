@@ -1,0 +1,10 @@
+# config/drivers/kscan/Kconfig
+
+config KSCAN_JAPANESE_DUPLEX
+    bool "Japanese Duplex Matrix KSCAN driver"
+    default y
+    depends on DT_HAS_ZMK_KSCAN_JAPANESE_DUPLEX_ENABLED
+    select TICKLESS_KERNEL
+    help
+      Enable the Japanese Duplex Matrix KSCAN driver for 
+      bidirectional matrix scanning.

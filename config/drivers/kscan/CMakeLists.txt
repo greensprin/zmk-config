@@ -1,0 +1,6 @@
+# Copyright (c) 2020-2023 The ZMK Contributors
+# SPDX-License-Identifier: MIT
+
+zephyr_library()
+
+zephyr_library_sources_ifdef(CONFIG_KSCAN_JAPANESE_DUPLEX kscan_japanese_duplex.c)
