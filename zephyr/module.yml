@@ -1,5 +1,3 @@
 build:
-  kconfig: config/drivers/kscan/Kconfig
-  cmake: config/drivers/kscan
   settings:
     board_root: .
