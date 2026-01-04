@@ -18,8 +18,8 @@
 #     artifact-name: corne_left_with_studio
 #
 include:
-  - board: seeedu_xiao_ble
+  - board: seeeduino_xiao_ble
     shield: pmw3610_keyball_left
-  - board: seeedu_xiao_ble
+  - board: seeeduino_xiao_ble
     shield: pmw3610_keyball_right
 ---
