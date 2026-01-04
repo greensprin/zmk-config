@@ -1,0 +1,5 @@
+config SHIELD_PMW3610_KEYBALL_LEFT
+    def_bool $(shields_list_contains,pmw3610_keyball_left)
+
+config SHIELD_PMW3610_KEYBALL_RIGHT
+    def_bool $(shields_list_contains,pmw3610_keyball_right)
