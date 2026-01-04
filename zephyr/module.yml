@@ -1,5 +1,5 @@
 build:
-  kconfig: config/drivers/Kconfig
-  cmake: config/drivers
+  kconfig: config/drivers/kscan/Kconfig
+  cmake: config/drivers/kscan
   settings:
     board_root: .
