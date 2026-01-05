@@ -6,6 +6,10 @@
 
 #include "pmw3610_keyball-layouts.dtsi"
 
+#define RCOL_OFFSET (2)
+#define RROW_OFFSET (2)
+#define RC_R(row, col) (RC(row + RROW_OFFSET, col + RCOL_OFFSET))
+
 / {
     chosen {
         zmk,physical-layout = &default_layout;
@@ -51,8 +55,8 @@
         rows = <2>;
 
         map = <
-            RC(2, 0) RC(3, 0) RC(0, 2) RC(0, 3)   RC(4, 2) RC(5, 2) RC(2, 4) RC(2, 5)
-            RC(2, 1) RC(3, 1) RC(1, 2) RC(1, 3)   RC(4, 3) RC(5, 3) RC(3, 4) RC(3, 5)
+            RC(2, 0) RC(3, 0) RC(0, 2) RC(0, 3)   RC_R(2, 0) RC_R(3, 0) RC_R(0, 2) RC_R(0, 3)
+            RC(2, 1) RC(3, 1) RC(1, 2) RC(1, 3)   RC_R(2, 1) RC_R(3, 1) RC_R(1, 2) RC_R(1, 3)
         >;
     };
 };
