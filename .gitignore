@@ -1,4 +1,6 @@
 .zmk/
 *.uf2
 copy.bat
+copy_from_ubuntu_left.bat
+copy_from_ubuntu_right.bat
 firmware.zip
